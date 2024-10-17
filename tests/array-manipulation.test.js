@@ -1,5 +1,5 @@
 // Import the arrayManipulation function from the specified module
-const arrayManipulation = require("./array-manipulation.js")
+const arrayManipulation = require("../array-manipulation.js")
 
 // Test case for typical queries with expected result of 882
 test("Test with typical queries 0", () => {
