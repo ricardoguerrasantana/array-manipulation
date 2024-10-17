@@ -13,7 +13,7 @@ function arrayManipulation(n, queries) {
     arr[a - 1] += k
 
     // Apply the decrement 'k' at the end index 'b' (if it's within bounds)
-    if (b < n) {
+    if (b <= n) {
       arr[b] -= k
     }
   }
@@ -23,7 +23,7 @@ function arrayManipulation(n, queries) {
   let current = 0
 
   // Loop through the array to compute the prefix sum and find the maximum value
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i < arr.length; i++) {
     // Add the value from the previous index to compute the prefix sum
     if (i > 0) {
       current += arr[i - 1]
