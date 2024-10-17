@@ -1,6 +1,17 @@
 // Import the arrayManipulation function from the specified module
 const arrayManipulation = require("./array-manipulation.js")
 
+// Test case for typical queries with expected result of 882
+test("Test with typical queries 0", () => {
+  let n = 4
+  let queries = [
+    [2, 3, 603], // Increment 603 for range 2 to 3
+    [1, 1, 286], // Increment 286 for range 1 to 1
+    [4, 4, 882], // Increment 882 for range 4 to 4
+  ]
+  expect(arrayManipulation(n, queries)).toBe(882) // Expected maximum value after operations
+})
+
 // Test case for typical queries with expected result of 200
 test("Test with typical queries 1", () => {
   let n = 3
